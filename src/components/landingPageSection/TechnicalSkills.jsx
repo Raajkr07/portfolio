@@ -32,17 +32,17 @@ import spring from '../../assets/icons/spring.svg';
 import tailwind from '../../assets/icons/tailwind.svg';
 
 const iconsRow = [
-    { name: "React", icon: react },
-    { name: "Figma", icon: figma },
-    { name: "Spring", icon: spring },
-    { name: "Docker", icon: docker },
-    { name: "JS", icon: js },
-    { name: "Redux", icon: redux },
     { name: "CSS", icon: css },
-    { name: "Java", icon: java },
-    { name: "AWS", icon: aws },
+    { name: "Figma", icon: figma },
     { name: "Tailwind", icon: tailwind },
+    { name: "JS", icon: js },
+    { name: "React", icon: react },
+    { name: "Redux", icon: redux },
     { name: "MYSQL", icon: mysql },
+    { name: "Java", icon: java },
+    { name: "Spring", icon: spring },
+    { name: "AWS", icon: aws },
+    { name: "Docker", icon: docker },
     { name: "MongoDB", icon: mongodb },
 ];
 
