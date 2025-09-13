@@ -26,7 +26,7 @@ function App() {
       <div >
         <StarsBackground />
         <BrowserRouter>
-          <Suspense fallback={<div className="text-white text-center mt-10">Just a Sec....</div>}>
+          <Suspense fallback={<div className="text-white text-center mt-20">Just a Sec....</div>}>
             <motion.main
               className="relative z-10"
               initial={{ opacity: 0, y: 20 }}
