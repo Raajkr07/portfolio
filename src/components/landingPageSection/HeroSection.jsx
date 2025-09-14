@@ -5,7 +5,7 @@ import GlowingBackground from '../backgroundAnimation/GlowingBackground';
 
 export default function HeroSection({ onToggleSidebar, sidebarCollapsed }) {
   return (
-    <section className="relative w-full mb-10 pr-4 pl-10 pt-16 overflow-y-auto">
+    <section className="relative w-full mb-10 pr-4 pl-10 pt-10 overflow-y-auto">
       <div className="flex flex-col items-start justify-start max-w-5xl mx-auto space-y-12">
 
         <div className="relative flex flex-row items-center w-full gap-10 sm:gap-16">
@@ -20,9 +20,9 @@ export default function HeroSection({ onToggleSidebar, sidebarCollapsed }) {
             style={{ pointerEvents: 'none' }}
           >
             <path
-              d="M120,15 Q40,10 30,60"
+              d="M120,35 Q30,10 25,70"
               stroke="#b496ff"
-              strokeWidth="2"
+              strokeWidth="1.5"
               fill="none"
               markerEnd="url(#arrowhead)"
             />
@@ -42,7 +42,7 @@ export default function HeroSection({ onToggleSidebar, sidebarCollapsed }) {
           </svg>
 
           <p className="text-lg ml-52 sm:text-xl font-main font-light text-white">
-            Hello! I am <span className="text-[#a176ff] font-medium">Raj Kumar</span>
+            Hi! I'm <span className="text-[#a176ff] text-5xl">Raaj Kumar</span>
           </p>
         </div>
 
@@ -79,10 +79,15 @@ export default function HeroSection({ onToggleSidebar, sidebarCollapsed }) {
 
         {/* Software Engineer / HopeMeds Section */}
         <div className="w-full text-left">
-          <h2 className="text-3xl sm:text-4xl font-main font-bold text-white mb-3">
+          <h2 className="text-3xl sm:text-4xl font-main font-bold text-white mb-2">
             I&apos;m a Full Stack Developer.
             <span className="animate-blink">|</span>
           </h2>
+
+          <p className="text-base mb-5 font-main sm:text-lg font-light text-white/85 leading-relaxed">
+            basically, self-taught Full Stack Developer with over 1+ year of experience in building projects. <br />
+            I create software products that is useful and enjoyable, balancing what users need with what businesses wants.
+          </p>
 
           <div className="flex flex-wrap font-main items-center gap-2 mb-4">
             <span className="text-lg sm:text-xl text-white/80">
@@ -102,11 +107,6 @@ export default function HeroSection({ onToggleSidebar, sidebarCollapsed }) {
               </span>
             </button>
           </div>
-
-          <p className="max-w-2xl text-base font-main sm:text-lg font-light text-white/85 leading-relaxed">
-            A self-taught Full Stack Developer, building projects for 1+ years now.<br />
-            I make meaningful and delightful software products that create an equilibrium between user needs and business goals.
-          </p>
         </div>
 
         
