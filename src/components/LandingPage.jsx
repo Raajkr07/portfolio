@@ -4,6 +4,7 @@ import Footer from './footer/Footer';
 import HeroSection from './landingPageSection/HeroSection';
 import FielsExperties from '../components/landingPageSection/FieldSection';
 import TechnicalSkills from '../components/landingPageSection/TechnicalSkills';
+import Projects from '../components/landingPageSection/ProjectSection';
 import ConcactUs from '../components/landingPageSection/ContatcUsSection';
 
 const LandingPage = () => {
@@ -17,6 +18,7 @@ const LandingPage = () => {
           <HeroSection />
           <FielsExperties/>
           <TechnicalSkills/>
+          <Projects/>
           <ConcactUs/>
         </div>
         {/* <div style={{ height: '1000px' }}></div> */}
