@@ -32,8 +32,8 @@ const fields = [
 
 const FieldSection = () => {
     return (
-        <div className="flex flex-col items-center justify-center w-full min-h-screen px-4 pb-20">
-            <h2 className=" font-main font-bold text-white text-4xl mb-12 tracking-wide">
+        <div className="flex flex-col items-center justify-center w-full px-4 py-20">
+            <h2 className=" font-main font-bold text-white text-4xl mb-12 underline tracking-wide">
                 Field Experties
             </h2>
 
