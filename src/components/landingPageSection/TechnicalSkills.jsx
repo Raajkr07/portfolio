@@ -66,8 +66,7 @@ const orbitIcons = [
 
 export default function LandingNetwork() {
     return (
-        <section className="w-full flex flex-col items-center justify-center relative overflow-visible"
-            style={{ margin: 0, padding: 0, minHeight: 480 }}>
+        <section className="w-full flex flex-col items-center justify-center relative overflow-visible">
             {/* Headline */}
             <h2 className="text-white text-2xl sm:text-3xl font-bold font-main text-center mt-0 mb-2">
                 I'm currently looking to join a <span className="text-[#a176ff]">cross-functional</span> team
