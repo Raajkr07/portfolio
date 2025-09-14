@@ -5,7 +5,7 @@ import GlowingBackground from '../backgroundAnimation/GlowingBackground';
 
 export default function HeroSection({ onToggleSidebar, sidebarCollapsed }) {
   return (
-    <section className="relative w-full min-h-screen pr-4 pl-10 pt-16 overflow-y-auto">
+    <section className="relative w-full mb-10 pr-4 pl-10 pt-16 overflow-y-auto">
       <div className="flex flex-col items-start justify-start max-w-5xl mx-auto space-y-12">
 
         <div className="relative flex flex-row items-center w-full gap-10 sm:gap-16">
@@ -31,7 +31,7 @@ export default function HeroSection({ onToggleSidebar, sidebarCollapsed }) {
                 id="arrowhead"
                 markerWidth="8"
                 markerHeight="8"
-                refX="8"
+                refX="6"
                 refY="4"
                 orient="auto"
                 markerUnits="strokeWidth"
@@ -108,6 +108,8 @@ export default function HeroSection({ onToggleSidebar, sidebarCollapsed }) {
             I make meaningful and delightful software products that create an equilibrium between user needs and business goals.
           </p>
         </div>
+
+        
       </div>
 
       {/* Blinking cursor animation */}
