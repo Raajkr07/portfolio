@@ -11,8 +11,8 @@ const StarsBackground = () => {
     const endX = Math.random() * window.innerWidth;
     const endY = Math.random() * window.innerHeight;
 
-    const duration = Math.random() * 7 + 20;
-    const delay = Math.random() * 5;
+    const duration = Math.random() * 7 + 30;
+    const delay = Math.random() * 1;
 
     return (
       <motion.div
