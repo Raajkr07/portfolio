@@ -17,7 +17,11 @@ const Header = ({ onLogoClick }) => {
         aria-label="Home"
       >
         <Link to="/">
-          <AnimatedInfinity className="h-8 sm:h-10 w-auto" stroke={2} color="#FFFFFF" />
+          <AnimatedInfinity
+            className="h-8 sm:h-10 w-auto"
+            stroke={2}
+            color="#FFFFFF"
+          />
         </Link>
       </div>
     </header>
