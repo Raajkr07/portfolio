@@ -1,12 +1,12 @@
 import { IconInfinity } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 
-const AnimatedInfinity = ({ size = 100, color = '#FFFFFF', stroke = 2 }) => {
+const AnimatedInfinity = ({ size = 100, color, stroke  }) => {
   return (
     <motion.div
-      animate={{
-        rotate: [0, 360],
-      }}
+      // animate={{
+      //   rotate: [0, 360],
+      // }}
       transition={{
         duration: 3,
         ease: 'linear',
