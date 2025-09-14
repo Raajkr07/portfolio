@@ -9,19 +9,17 @@ import {
   IconBrandX,
   IconBrandLinkedin,
   IconBrandGithub,
-  IconBrandYoutube,
-  IconBrandSlack,
-  IconBrandNotion,
+  IconMail,
+  IconBrandInstagram,
 } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 
 const socialLinks = [
   { Icon: IconBrandX, href: 'https://x.com/', label: 'X' },
-  { Icon: IconBrandLinkedin, href: 'https://linkedin.com/', label: 'LinkedIn' },
-  { Icon: IconBrandGithub, href: 'https://github.com/', label: 'GitHub' },
-  { Icon: IconBrandYoutube, href: 'https://youtube.com/', label: 'YouTube' },
-  { Icon: IconBrandSlack, href: 'https://slack.com/', label: 'Slack' },
-  { Icon: IconBrandNotion, href: 'https://notion.so/', label: 'Notion' },
+  { Icon: IconBrandLinkedin, href: 'https://www.linkedin.com/in/raajkumar07/', label: 'LinkedIn' },
+  { Icon: IconBrandGithub, href: 'https://github.com/Raajkr07', label: 'GitHub' },
+  { Icon: IconMail, href: 'mailto:rajkumar07.dev@gmail.com', label: 'Mail' },
+  { Icon: IconBrandInstagram, href: 'https://www.instagram.com/raajkr.07/', label: 'Insta' },
 ];
 
 const iconVariants = {
@@ -39,17 +37,17 @@ const iconVariants = {
 
 export default function Footer() {
   return (
-    <footer className="bg-transparent border-0 px-4 ml-36 mr-36 mb-4">
+    <footer className="bg-transparent border-0 px-4 mx-4 sm:mx-36 mb-4 font-main">
       <Container
         size="lg"
         className="flex flex-col md:flex-row items-center justify-between pt-6 pb-2 gap-y-4 md:gap-y-0"
         role="contentinfo"
       >
         <Text className="text-sm sm:text-base text-center md:text-left text-white">
-          © {new Date().getFullYear()}
+          Portfolio  © {new Date().getFullYear()}
         </Text>
 
-        <div className="grid grid-cols-3 sm:grid-cols-6   justify-items-center w-full max-w-lg mx-auto py-4">
+        <div className="flex flex-wrap justify-center sm:justify-between gap-4 sm:gap-3 w-full max-w-lg mx-auto py-4">
           {socialLinks.map(({ Icon, href, label }) => (
             <motion.div
               key={label}
@@ -67,23 +65,23 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 title={label}
                 variant="subtle"
-                className="text-gray-400 transition-shadow duration-300 hover:text-blue-400 hover:shadow-[0_4px_15px_0_rgba(59,130,246,0.35)] focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="text-gray-400 transition-shadow duration-300 hover:text-blue-400 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
-                <Icon size={30} stroke={1.5} />
+                <Icon size={32} stroke={1.5} />
               </ActionIcon>
             </motion.div>
           ))}
         </div>
 
         <span
-          className="flex items-center text-sm sm:text-base text-white"
-          style={{ fontFamily: 'merriweather, serif' }}
+          className="flex items-center text-sm sm:text-base text-white mt-4 md:mt-0"
         >
-          made with
-          <Heart className="mx-1 w-4 h-4 text-red-500 fill-red-500" />
+          Made with
+          <Heart className="mx-1 w-6 h-6 text-red-500 fill-red-500" />
           by Raaj
         </span>
       </Container>
     </footer>
+
   );
 }
