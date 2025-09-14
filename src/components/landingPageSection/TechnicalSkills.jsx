@@ -69,10 +69,10 @@ export default function LandingNetwork() {
         <section className="w-full flex flex-col items-center justify-center relative overflow-visible">
             {/* Headline */}
             <h2 className="text-white text-2xl sm:text-3xl font-bold font-main text-center mt-0 mb-2">
-                I'm currently looking to join a <span className="text-[#a176ff]">cross-functional</span> team
+                I'm currently looking to join a <span className="text-[#a176ff]">cross-functional</span> team.
             </h2>
             <p className="text-white/80 text-sm sm:text-base text-center font-main mb-6 mt-0">
-                that values improving people's lives through accessible design
+                Here are some of the technologies and tools I work with regularly:
             </p>
 
 
