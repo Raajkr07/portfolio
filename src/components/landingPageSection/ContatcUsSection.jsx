@@ -27,7 +27,7 @@ export default function ContactPage() {
   });
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-2 font-main">
+    <div className="py-4 flex flex-col items-center justify-center px-2 font-main">
       <div className="flex gap-2">
         <button
           className={`px-6 py-2 rounded-l-full font-semibold border transition ${
