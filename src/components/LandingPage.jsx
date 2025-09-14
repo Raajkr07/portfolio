@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Header from './header/Header';
-import Footer from './footer/Footer';
+import Footer from '../components/footer/footer';
 import HeroSection from './landingPageSection/HeroSection';
 import FielsExperties from '../components/landingPageSection/FieldSection';
 import TechnicalSkills from '../components/landingPageSection/TechnicalSkills';
