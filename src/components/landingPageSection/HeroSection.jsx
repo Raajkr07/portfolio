@@ -54,7 +54,7 @@ export default function HeroSection({ onToggleSidebar, sidebarCollapsed }) {
             <img
               src={Image}
               alt="Raj Kumar"
-              className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-xl shadow-lg"
+              className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-xl"
             />
           </div>
 
