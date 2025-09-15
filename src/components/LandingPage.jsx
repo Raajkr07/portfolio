@@ -6,6 +6,7 @@ import FielsExperties from '../components/landingPageSection/FieldSection';
 import TechnicalSkills from '../components/landingPageSection/TechnicalSkills';
 import Projects from '../components/landingPageSection/ProjectSection';
 import ConcactUs from '../components/landingPageSection/ContatcUsSection';
+import LineImage from '../components/landingPageSection/images/ImageSection';
 
 const LandingPage = () => {
 
@@ -20,6 +21,7 @@ const LandingPage = () => {
           <TechnicalSkills/>
           <Projects/>
           <ConcactUs/>
+          <LineImage/>
         </div>
         {/* <div style={{ height: '1000px' }}></div> */}
       </main>
