@@ -1,12 +1,45 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website showcasing my work, skills, and projects as a full-stack web developer and MCA student from Chandigarh, India. Designed to help recruiters and collaborators quickly understand my background and technical abilities.
 
-Currently, two official plugins are available:
+- **Portfolio**: [Raaj Kumar](https://raajkumar.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Table of Contents
 
-## Expanding the ESLint configuration
+- [About](#about)
+- [Screenshots](#screenshots)
+- [Tech Stack](#tech-stack)
+- [Contact](#contact)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧑‍💻 About
+
+I am an MCA student passionate about full-stack web development. This portfolio highlights my personal projects, coding journey, and demonstrating my technical skills and problem-solving abilities.
+
+## 📸 Screenshots
+
+| View | Screenshot |
+|------|------------|
+| **Herosection** | ![herosection](src/assets/readme/herosection.png) |
+| **Fields** | ![fields](src/assets/readme/fieldexperties.png) |
+| **Technical Skills** | ![technical skills](src/assets/readme/technicalskills.png) |
+| **Projects Section** | ![Projects Section](src/assets/readme/projects.png) |
+| **Contact Us** | ![contacs us](src/assets/readme/contactUs.png) |
+
+## 🛠️ Tech Stack
+
+- **Frontend**: HTML, CSS, JavaScript,  React.js
+- **Backend**: Netlify function
+- **Styling**: TailwindCSS with custom Merriweather font and color palette
+- **Build Tools**: npm
+- **Deployment**: [netlify(CI-CD) and neon(for database)]
+
+## 📫 Contact
+
+Feel free to reach out to me:
+
+- **GitHub**: [Raajkr07](https://github.com/Raajkr07)
+- **LinkedIn**: [Raj Kumar](www.linkedin.com/in/raajkumar07)
+- **Email**: rajkumar07.dev@gmail.com
+
+
+⭐ If you found this helpful, please consider giving it a star!
