@@ -15,7 +15,7 @@ import {
 import { motion } from 'framer-motion';
 
 const socialLinks = [
-  { Icon: IconBrandX, href: 'https://x.com/', label: 'X' },
+  { Icon: IconBrandX, href: 'https://x.com/RajKuma05029694', label: 'X' },
   { Icon: IconBrandLinkedin, href: 'https://www.linkedin.com/in/raajkumar07/', label: 'LinkedIn' },
   { Icon: IconBrandGithub, href: 'https://github.com/Raajkr07', label: 'GitHub' },
   { Icon: IconMail, href: 'mailto:rajkumar07.dev@gmail.com', label: 'Mail' },
@@ -44,7 +44,7 @@ export default function Footer() {
         role="contentinfo"
       >
         <Text className="text-sm sm:text-base text-center md:text-left text-white">
-          Portfolio  © {new Date().getFullYear()}
+          © {new Date().getFullYear()} Portfolio ♾️
         </Text>
 
         <div className="flex flex-wrap justify-center sm:justify-between gap-4 sm:gap-3 w-full max-w-lg mx-auto py-4">
