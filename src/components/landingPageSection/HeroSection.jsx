@@ -1,11 +1,12 @@
 import React from 'react';
 import { IconHeartbeat } from '@tabler/icons-react';
 import Image from '../../assets/Avatar.png';
+import { Withspecs } from '../../assets/myImages/WithspecsSVG';
 import GlowingBackground from '../backgroundAnimation/GlowingBackground';
 
 export default function HeroSection({ onToggleSidebar, sidebarCollapsed, innerRef }) {
   return (
-    <section ref={innerRef} id="hero" className="relative w-full mb-10 pr-4 pl-10 pt-10 overflow-y-auto">
+    <section ref={innerRef} id="hero" className="relative w-full mb-10 pr-4 pl-10 overflow-y-auto">
       <div className="flex flex-col items-start justify-start max-w-5xl mx-auto space-y-12">
 
         <div className="relative flex flex-row items-center w-full gap-10 sm:gap-16">
@@ -20,7 +21,7 @@ export default function HeroSection({ onToggleSidebar, sidebarCollapsed, innerRe
             style={{ pointerEvents: 'none' }}
           >
             <path
-              d="M120,35 Q30,10 25,70"
+              d="M120,35 Q30,10 40,75"
               stroke="#b496ff"
               strokeWidth="1.5"
               fill="none"
@@ -47,31 +48,31 @@ export default function HeroSection({ onToggleSidebar, sidebarCollapsed, innerRe
         </div>
 
         {/* Avatar and Intro Section */}
-        <div className="flex flex-row items-start w-full gap-8 sm:gap-16">
+        <div className="flex flex-col md:flex-row items-center md:items-start w-full gap-10 md:gap-16 lg:gap-20 mt-4">
           {/* Avatar */}
-          <div className="relative w-36 h-36 sm:w-44 sm:h-44 flex items-center justify-center">
+          <div className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 flex items-center justify-center shrink-0">
             <GlowingBackground zIndex={-1} />
-            <img
-              src={Image}
-              alt="Raj Kumar"
-              className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-xl"
+            <Withspecs
+              className="animate-svg relative w-full h-full"
+              data-duration="100"
+              data-stagger="80"
             />
           </div>
 
           {/* Text */}
-          <div className="flex flex-col justify-center flex-1 text-left">
-            <p className="text-base sm:text-lg font-main font-light text-white/80 underline mb-2">
+          <div className="flex flex-col justify-center text-center md:text-left w-full">
+            <p className="text-sm sm:text-base md:text-lg font-main font-light text-white/80 underline mb-3">
               A Developer who
             </p>
-            <h1 className="text-4xl sm:text-5xl font-main font-bold text-white leading-tight mb-3">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-main font-bold text-white leading-tight mb-4">
               Judges a book<br />
-              by it's{' '}
+              by its{' '}
               <span className="relative inline-block text-[#a176ff]">
                 cover
               </span>
               ...
             </h1>
-            <p className="text-sm sm:text-base font-main font-light text-white/70 max-w-md">
+            <p className="text-sm sm:text-base md:text-lg font-main font-light text-white/70 max-w-xl mx-auto md:mx-0">
               Because if the cover does not impress you, what else can?
             </p>
           </div>
@@ -109,7 +110,7 @@ export default function HeroSection({ onToggleSidebar, sidebarCollapsed, innerRe
           </div>
         </div>
 
-        
+
       </div>
 
       {/* Blinking cursor animation */}
