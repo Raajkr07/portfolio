@@ -20,7 +20,7 @@ export const SelfieSVG = (props) => {
         transform="translate(0.000000,310.000000) scale(0.100000,-0.100000)"
         fill="none"
         stroke="#ffffff"
-        strokeWidth="10"
+        strokeWidth="12"
         strokeLinecap="round"
         strokeLinejoin="round"
       >
