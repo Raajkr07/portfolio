@@ -17,7 +17,7 @@ const ImageSection = () => {
     }, []);
 
     return (
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full pt-20 pb-6 sm:pr-44">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full pt-44 pb-6 sm:pr-44">
             <SelfieSVG
                 alt="Raaj Kumar"
                 draggable="false"
