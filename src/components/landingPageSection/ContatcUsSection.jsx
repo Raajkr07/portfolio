@@ -95,7 +95,7 @@ export default function ContactPage() {
         <form
           name="contact"
           method="POST"
-          netlify
+          netlify="true"
           className="max-w-2xl w-full mt-10 flex flex-col gap-6"
           onSubmit={handleSubmit}
         >
