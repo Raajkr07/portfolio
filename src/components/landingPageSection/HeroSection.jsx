@@ -3,9 +3,9 @@ import { IconHeartbeat } from '@tabler/icons-react';
 import Image from '../../assets/Avatar.png';
 import GlowingBackground from '../backgroundAnimation/GlowingBackground';
 
-export default function HeroSection({ onToggleSidebar, sidebarCollapsed }) {
+export default function HeroSection({ onToggleSidebar, sidebarCollapsed, innerRef }) {
   return (
-    <section className="relative w-full mb-10 pr-4 pl-10 pt-10 overflow-y-auto">
+    <section ref={innerRef} id="hero" className="relative w-full mb-10 pr-4 pl-10 pt-10 overflow-y-auto">
       <div className="flex flex-col items-start justify-start max-w-5xl mx-auto space-y-12">
 
         <div className="relative flex flex-row items-center w-full gap-10 sm:gap-16">
