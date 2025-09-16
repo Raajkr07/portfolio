@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Name from '../../assets/Name';
-import AnimatedInfinity from '../../assets/AnimatedInfinity';
+import Name from '../../assets/logos/Name';
+import AnimatedInfinity from '../../assets/logos/AnimatedInfinity';
+import Infinity from '../../assets/logos/infinite';
 
 const Header = ({ onLogoClick }) => {
 
@@ -17,9 +18,9 @@ const Header = ({ onLogoClick }) => {
         aria-label="Home"
       >
         <Link to="/">
-          <AnimatedInfinity
+          <Infinity
             className="h-8 sm:h-10 w-auto"
-            stroke={2}
+            stroke={1}
             color="#FFFFFF"
           />
         </Link>
