@@ -65,7 +65,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 title={label}
                 variant="subtle"
-                className="text-gray-400 transition-shadow duration-300 hover:text-blue-400 focus:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="text-gray-400 transition-shadow duration-300 hover:text-[#a176ff] focus:text-[#a176ff] focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <Icon size={32} stroke={1.5} />
               </ActionIcon>
@@ -81,7 +81,7 @@ export default function Footer() {
           by Raaj
         </span>
       </Container>
+      <span className="absolute left-0 bottom-0 w-full h-1 bg-[#a529a1]"></span>
     </footer>
-
   );
 }
