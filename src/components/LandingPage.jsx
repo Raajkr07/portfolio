@@ -28,7 +28,7 @@ const LandingPage = () => {
         <Projects id="projects-section" />
         <ConcactUs id="contact-section" />
         <LineImage />
-        <SectionLinks />
+        <SectionLinks inView={inView}/>
       </main>
       <Footer />
     </div>
