@@ -37,7 +37,7 @@ const iconVariants = {
 
 export default function Footer() {
   return (
-    <footer className="bg-transparent border-0 px-4 mx-4 sm:mx-36 mb-16 font-main">
+    <footer className="bg-transparent border-0 px-4 mx-4 sm:mx-36 mb-12 font-main">
       <Container
         size="lg"
         className="flex flex-col md:flex-row items-center justify-between pt-6 pb-2 gap-y-4 md:gap-y-0"
