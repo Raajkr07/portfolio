@@ -17,7 +17,7 @@ const FREELANCE_TYPES = [
   "Deployment",
 ];
 
-export default function ContactPage() {
+export default function ContactPage({ innerRef }) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [mode, setMode] = useState("Contact");
@@ -63,7 +63,7 @@ export default function ContactPage() {
 
 
   return (
-    <div className="py-4 flex flex-col items-center justify-center px-2 font-main">
+    <div id="contact" ref={innerRef} className="py-4 flex flex-col items-center justify-center px-2 font-main">
       <div className="flex gap-2">
         <button
           className={`px-6 py-2 rounded-l-full font-semibold border transition ${mode === "Contact" ? "bg-white text-[#11071F]" : "bg-[#11071F] text-white"
