@@ -1,14 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-scroll';
-import {IconHomeFilled, IconColumns3Filled, } from '@tabler/icons-react';
+import {
+  IconHomeFilled,
+  IconColumns3Filled,
+  IconCode,
+  IconAppWindowFilled,
+  IconMessageFilled,
+} from '@tabler/icons-react';
 
 const sections = [
-  { label: 'Hero', to: 'hero-section' },
-  { label: 'Fields', to: 'fields-section' },
-  { label: 'Skills', to: 'skills-section' },
-  { label: 'Projects', to: 'projects-section' },
-  { label: 'Contact', to: 'contact-section' },
+  { icon: IconHomeFilled, to: 'hero' },
+  { icon: IconColumns3Filled, to: 'fields' },
+  { icon: IconCode, to: 'technical-skills' },
+  { icon: IconAppWindowFilled, to: 'projects' },
+  { icon: IconMessageFilled, to: 'contact' },
 ];
 
 const SectionLinks = () => {
@@ -21,23 +27,26 @@ const SectionLinks = () => {
     setShowNav(!inView);
   }, [inView]);
 
-  if (!showNav) return <div ref={heroRef} />;
+  if (!showNav) return <div ref={heroRef} aria-hidden="true" />;
 
   return (
-    <nav className="fixed bottom-0 left-0 w-full bg-white dark:bg-gray-900 shadow-md z-50">
-      <ul className="flex justify-around p-3">
-        {sections.map(({ label, to }) => (
-          <li key={to} className="cursor-pointer text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600">
-            <Link 
-              to={to} 
-              smooth={true} 
-              duration={500} 
-              spy={true} 
+    <nav className="fixed bottom-4 left-1/2 transform -translate-x-1/2 border-2 border-[#a176ff] w-full max-w-[700px] bg-[#2B0F52] bg-opacity-95 shadow-md z-50 rounded-lg">
+      <ul className="flex justify-between md:justify-around p-3 text-white">
+        {sections.map(({ icon: Icon, to }) => (
+          <li
+            key={to}
+            className="cursor-pointer hover:text-[#a176ff] transition-colors duration-200"
+          >
+            <Link
+              to={to}
+              smooth={true}
+              duration={500}
+              spy={true}
               offset={-70}
-              className="block px-2 py-1"
-              activeClass="text-blue-600 border-b-2 border-blue-600"
+              className="flex flex-col items-center px-3 py-1 text-sm font-medium text-gray-200"
+              activeClass="text-[#a176ff] border-b-2 border-[#a176ff]"
             >
-              {label}
+              <Icon size={24} stroke={1.5} className='hover:text-[#a176ff]' />
             </Link>
           </li>
         ))}
