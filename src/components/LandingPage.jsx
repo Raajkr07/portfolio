@@ -9,6 +9,7 @@ import Projects from '../components/landingPageSection/ProjectSection';
 import ConcactUs from '../components/landingPageSection/ContatcUsSection';
 import LineImage from '../components/landingPageSection/images/ImageSection';
 import FloatingSocialIcons from '../components/landingPageSection/FloatingSocialLinks';
+import SectionLinks from '../components/links/SectionLinks'
 
 const LandingPage = () => {
 
@@ -19,17 +20,15 @@ const LandingPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow pt-[70px]">
-
-        <div >
-          <HeroSection innerRef={heroRef}/>
-          <FloatingSocialIcons inView={inView}/>
-          <FielsExperties/>
-          <TechnicalSkills/>
-          <Projects/>
-          <ConcactUs/>
-          <LineImage/>
-        </div>
+      <main className="flex-grow pt-[70px] relative">
+        <HeroSection innerRef={heroRef} id="hero-section" />
+        <FloatingSocialIcons inView={inView} />
+        <FielsExperties id="fields-section" />
+        <TechnicalSkills id="skills-section" />
+        <Projects id="projects-section" />
+        <ConcactUs id="contact-section" />
+        <LineImage />
+        <SectionLinks />
       </main>
       <Footer />
     </div>
