@@ -4,7 +4,7 @@ import { SelfieSVG } from '../../../assets/myImages/SelfieSVG';
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const messages = ["Sayonara!", "C U Soon!", "फिर मिलेंगे!"];
+const messages = [ "さよなら!","Sayonara!", "ありがとう!" , "Arigatō!"];
 
 const ImageSection = () => {
     const [index, setIndex] = useState(0);
@@ -33,8 +33,8 @@ const ImageSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.8 }}
-                    className="font-main font-bold 
-            text-4xl sm:text-6xl md:text-[3rem] lg:text-[4rem] xl:text-[5rem] 2xl:text-[7rem]
+                    className="font-main font-bold flex align-middle justify-center
+            text-4xl sm:text-5xl md:text-[3rem] lg:text-[4rem] xl:text-[5rem] 2xl:text-[6rem]
             leading-tight sm:leading-[1.2] md:leading-[1.25] lg:leading-[1.3]
             py-6 sm:py-8
             w-full sm:max-w-[70%] md:max-w-[50%] lg:max-w-[40%]
