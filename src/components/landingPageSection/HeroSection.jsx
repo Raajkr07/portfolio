@@ -102,7 +102,7 @@ export default function HeroSection({ onToggleSidebar, sidebarCollapsed, innerRe
             >
               <IconHeartbeat size={32} stroke={2.2} className="text-[#a176ff] animate-pulse" />
               <span className="font-heading text-2xl font-semibold tracking-tight text-[#a176ff] select-none no-underline blinking-logo">
-                <a href="https://hopemeds.netlify.app/" className='hover:underline'>
+                <a href="https://hopemeds.netlify.app/" target='_blank' className='hover:underline'>
                   HopeMeds
                 </a>
               </span>
