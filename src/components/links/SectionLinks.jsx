@@ -42,7 +42,7 @@ const SectionLinks = () => {
 
   return (
     <nav
-      className="fixed bottom-3 left-1/2 transform -translate-x-1/2 border-2 border-[#200A3F] w-full max-w-[400px] bg-[#130329] bg-opacity-75 shadow-md z-50 rounded-lg"
+      className="fixed bottom-3 left-1/2 transform -translate-x-1/2 border-2 border-[#392E4E] w-full max-w-[400px] bg-[#130329] bg-opacity-75 shadow-md z-50 rounded-lg"
       aria-label="Section navigation"
     >
       <ul className="flex justify-between md:justify-around p-3 text-white">
