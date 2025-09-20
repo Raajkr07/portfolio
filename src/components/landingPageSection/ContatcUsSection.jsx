@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 const INTERESTS = [
   "Software Devlopment",
-  "Design & Branding", 
-  "Web Development", 
+  "Design & Branding",
+  "Web Development",
   "App Devlopment",
   "Consulting",
   "Others",
@@ -32,6 +32,16 @@ export default function ContactPage({ innerRef }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+
+    if (
+      !form.name.trim() ||
+      !form.email.trim() ||
+      !form.message.trim()
+    ) {
+      alert("Please fill in all the fields before submitting.");
+      setLoading(false);
+      return;
+    }
 
     try {
       const response = await fetch("/.netlify/functions/submitContact", {
