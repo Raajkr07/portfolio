@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import GlowingBackground from "./backgroundEffects/GlowingBackground";
 import HopeMeds from '../../assets/project/hopemeds.png';
 import Journal from '../../assets/project/journal.png';
-import SecureSpend from '../../assets/project/SecureSpend.png';
+import SecureSpend from '../../assets/project/secureSpend.png';
 
 export default function FeaturedProject() {
   return (
