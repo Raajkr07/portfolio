@@ -75,7 +75,7 @@ export default function FeaturedProject() {
               color="rgba(161,118,255,0.6)"
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
             />
-            <a href="https://hopemeds.netlify.app/" className="relative z-10 block w-full">
+            <a href="https://hopemeds.netlify.app/" target="_blank" className="relative z-10 block w-full">
               <img
                 src={HopeMeds}
                 alt="HopeMeds"
@@ -112,7 +112,7 @@ export default function FeaturedProject() {
             viewport={{ once: true }}
             className="relative z-10 w-full md:pt-12"
           >
-            <a href="https://github.com/Raajkr07/journal-management" className="relative z-10 block w-full">
+            <a href="https://github.com/Raajkr07/journal-management" target="_blank" className="relative z-10 block w-full">
               <img
                 src={Journal}
                 alt="Journal"
@@ -206,9 +206,9 @@ export default function FeaturedProject() {
           >
             <div className="bg-[#2B2540] bg-opacity-95 text-left rounded-xl px-4 sm:px-6 py-4 shadow-lg max-w-lg backdrop-blur-sm">
               <p className="text-white/85 text-sm sm:text-base leading-relaxed">
-                SecureSpend is a robust platform designed for businesses to track their expenses, cash flow, and overall financial health securely. It helps businesses gain clear insights into spending patterns and manage finances effectively to support sustainable growth.
+                SecureSpend is a platform designed for businesses to track their expenses, cash flow, and overall financial health securely. It helps businesses gain clear insights into spending patterns and manage finances effectively to support sustainable growth.
                 <br />
-                Tech Stack: React, Tailwind CSS, React Router.
+                Tech Stack: HTML, CSS, Tailwind, React.
               </p>
 
             </div>
@@ -248,7 +248,7 @@ export default function FeaturedProject() {
               color="rgba(161,118,255,0.6)"
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
             />
-            <a href="https://securespend.netlify.app/" className="relative z-10 block w-full">
+            <a href="https://securespend.netlify.app/" target="_blank" className="relative z-10 block w-full">
               <img
                 src={SecureSpend}
                 alt="HopeMeds"
