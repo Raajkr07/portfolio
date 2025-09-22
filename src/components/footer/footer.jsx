@@ -1,6 +1,5 @@
 import {
   ActionIcon,
-  Group,
   Text,
   Container,
 } from '@mantine/core';
@@ -11,6 +10,7 @@ import {
   IconBrandGithub,
   IconMail,
   IconBrandInstagram,
+  IconCalendarTime,
 } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 
@@ -20,6 +20,7 @@ const socialLinks = [
   { Icon: IconBrandGithub, href: 'https://github.com/Raajkr07', label: 'GitHub' },
   { Icon: IconMail, href: 'mailto:rajkumar07.dev@gmail.com', label: 'Mail' },
   { Icon: IconBrandInstagram, href: 'https://www.instagram.com/raajkr.07/', label: 'Insta' },
+  { Icon: IconCalendarTime, href: 'https://cal.com/raajkumar', label: 'schedule Meeting' },
 ];
 
 const iconVariants = {
