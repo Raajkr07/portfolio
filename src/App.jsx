@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { MantineProvider, createTheme } from '@mantine/core';
 import { motion } from 'framer-motion';
+import ClickSpark from './components/reactBits/ClickSpark';
 
 import StarsBackground from './components/backgroundAnimation/StarBackground';
 import AppRoutes from './routes/AppRoutes';
@@ -25,20 +26,28 @@ function App() {
     <MantineProvider theme={theme} withNormalizeCSS withGlobalStyles>
       <div >
         <StarsBackground />
-        <BrowserRouter>
-          <Suspense fallback={<div className="text-white text-center mt-20">
-            Just a Sec....
+        <ClickSpark
+          sparkColor='#fff'
+          sparkSize={10}
+          sparkRadius={15}
+          sparkCount={8}
+          duration={400}
+        >
+          <BrowserRouter>
+            <Suspense fallback={<div className="text-white text-center mt-20">
+              Just a Sec....
             </div>}>
-            <motion.main
-              className="relative z-10"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
-            >
-              <AppRoutes />
-            </motion.main>
-          </Suspense>
-        </BrowserRouter>
+              <motion.main
+                className="relative z-10"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: 'easeOut' }}
+              >
+                <AppRoutes />
+              </motion.main>
+            </Suspense>
+          </BrowserRouter>
+        </ClickSpark>
       </div>
     </MantineProvider>
   );
