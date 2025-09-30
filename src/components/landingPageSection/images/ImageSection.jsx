@@ -1,6 +1,6 @@
 import React from 'react'
 import LineImage from '../../../assets/LineImage.png';
-import { SelfieSVG } from '../../../assets/myImages/SelfieSVG';
+import { SelfieMountainBG } from '../../../assets/myImages/SelfieMountainBG';
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -18,7 +18,7 @@ const ImageSection = () => {
 
     return (
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full pt-44 pb-6 sm:pr-44">
-            <SelfieSVG
+            <SelfieMountainBG
                 alt="Raaj Kumar"
                 draggable="false"
                 className="
