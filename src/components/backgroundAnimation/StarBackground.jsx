@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const StarsBackground = () => {
-  const stars = Array.from({ length: 80 }).map((_, i) => {
-    const size = Math.random() * 2 + 0.5;
+  const stars = Array.from({ length: 90 }).map((_, i) => {
+    const size = Math.random() * 2 + 0.7;
 
     const startX = Math.random() * window.innerWidth;
     const startY = Math.random() * window.innerHeight;
@@ -11,7 +11,7 @@ const StarsBackground = () => {
     const endX = Math.random() * window.innerWidth;
     const endY = Math.random() * window.innerHeight;
 
-    const duration = Math.random() * 7 + 30;
+    const duration = Math.random() * 9 + 70;
     const delay = Math.random() * 1;
 
     return (
@@ -21,7 +21,7 @@ const StarsBackground = () => {
         animate={{
           x: [startX, endX, startX],
           y: [startY, endY, startY],
-          opacity: [0.2, 1, 0.2],
+          opacity: [0.7, 1, 0.2],
         }}
         transition={{
           duration,
